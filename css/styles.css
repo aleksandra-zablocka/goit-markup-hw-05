@@ -175,14 +175,15 @@ body {
 }
 
 .label-what-we-do-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--label);
   color: var(--text-white);
   font-weight: bold;
   position: absolute;
   width: 370px;
   height: 70px;
-  padding: 25px;
-  text-align: center;
   bottom: 0;
 }
 
