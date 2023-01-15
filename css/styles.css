@@ -63,13 +63,30 @@ body {
   color: var(--text-blue);
 }
 
-.navigation li a {
+.navigation-link {
   text-decoration: none;
   font-weight: 500;
   color: var(--text-dark-grey);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agencja,
+.portfolio {
+  position: relative;
+}
+
+.agencja::after,
+.portfolio::after {
+  position: absolute;
+  bottom: -33px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--bg-blue);
+  border-radius: 2px;
 }
 
 .address-address,
@@ -80,8 +97,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation li a:focus,
-.navigation li a:hover,
+.navigation-link:focus,
+.navigation-link:hover,
 .nav-links-parent li a:focus,
 .nav-links-parent li a:hover,
 .address-address:focus,
@@ -264,9 +281,8 @@ body {
 .header-parent {
   display: flex;
   width: 1200px;
+  height: 80px;
   align-items: center;
-  margin-top: 24px;
-  padding-bottom: 25px;
   justify-content: space-between;
 }
 
