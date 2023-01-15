@@ -6,6 +6,7 @@
   --text-white: #ffffff;
   --bg-dark-grey: #2f303a;
   --bg-blue: #2196f3;
+  --bg-blue-rgba: rgba(33, 150, 243, 0.9);
   --bg-grey: #f5f4fa;
   --bg-white: #ffffff;
   --border-grey: #eeeeee;
@@ -593,4 +594,31 @@ header {
   visibility: hidden;
   opacity: 0;
   transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
+}
+
+.box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 370px;
+  height: 294px;
+  background-color: var(--bg-blue-rgba);
+  padding: 49px 45px 49px 24px;
+  color: var(--text-white);
+  font-size: 18px;
+  line-height: 1.55;
+  position: absolute;
+  /* display: flex; */
+  /* z-index: 3; */
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box:hover .overlay {
+  transform: translateY(-100%);
 }
