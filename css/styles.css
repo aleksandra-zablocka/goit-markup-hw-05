@@ -189,7 +189,7 @@ body {
 .figcap-sec2-portfolio {
   border: 1px solid var(--border-grey);
   border-top: none;
-  width: 370px;
+  padding: 20px;
 }
 
 .image {
@@ -248,19 +248,19 @@ body {
   justify-content: flex-end;
   gap: 30px;
   flex-grow: 0.5;
-    /* background-color: orange; */
+  /* background-color: orange; */
   /* border: dotted violet 2px; */
 }
 
-.icon-with-text:hover, 
+.icon-with-text:hover,
 .icon-with-text:focus {
   color: var(--text-blue);
-} 
+}
 
-.icon-with-text:hover .icon-nav, 
-.icon-with-text:focus .icon-nav{
+.icon-with-text:hover .icon-nav,
+.icon-with-text:focus .icon-nav {
   fill: var(--text-blue);
-} 
+}
 
 .sec-1-parent {
   display: flex;
@@ -355,21 +355,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 }
 
 .portfolio-cards-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
-}
-
-li.portfolio-cards-item {
   max-width: 370px;
-}
-
-.portfolio-cards-item figcaption {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  max-height: 404px;
 }
 
 .section {
@@ -491,7 +482,7 @@ header {
 .portfolio-cards-item:hover,
 .portfolio-cards-item:focus {
   background: var(--bg-white);
-  border: 1px solid var(--border-grey);
+  border: 0 1px 1px 1px solid var(--border-grey);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
@@ -526,4 +517,13 @@ header {
 
 .circle2:hover {
   background-color: var(--bg-blue);
+}
+
+/* 15.01 */
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
 }
