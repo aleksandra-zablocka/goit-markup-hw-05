@@ -83,7 +83,7 @@ body {
 .agencja::after,
 .portfolio::after {
   position: absolute;
-  bottom: -33px;
+  bottom: -32px;
   content: "";
   display: block;
   height: 4px;
@@ -641,7 +641,6 @@ header {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: scale(0) /* translateX(-50%) translateY(-50%) rotate(0deg)*/;
 }
 
 .modal {
